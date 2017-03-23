@@ -54,6 +54,9 @@ export default class JustTheTip extends Component {
       tip: 0
     }
   }
+  resetAll(){
+      this.setState({ total: 0, tip: 0 })
+  }
   btnLog(num) {
     let tip = parseFloat((num * 100) / 100).toFixed(2) * this.state.total
     this.setState({ tip }, () => {
@@ -68,7 +71,6 @@ export default class JustTheTip extends Component {
     else {
       Alert("You must provide a valid number")
     }
-
   }
   render() {
     return (
@@ -93,7 +95,7 @@ export default class JustTheTip extends Component {
         </View>
 
         <Button
-          onPress={() => { this.setState({ total: 0, tip: 0 }) }}
+          onPress={()=>{this.resetAll()}}
           title="Reset"
           style={color = "#841584"}
         />
