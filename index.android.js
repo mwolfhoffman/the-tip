@@ -63,7 +63,7 @@ export default class JustTheTip extends Component {
   changeTotal(num) {
     if (!isNaN(num)) {
       let total = parseFloat(num).toFixed(2)
-      this.setState({ total })
+      this.setState({ total, tip:0 })
     }
     else {
       Alert("You must provide a valid number")
@@ -86,7 +86,7 @@ export default class JustTheTip extends Component {
           </Text>
         </View>
 
-        <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+        <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around', alignItems: 'flex-start' }}>
           <TipChoice title="10%" onPress={() => { this.btnLog(0.10) }} />
           <TipChoice title="15%" onPress={() => { this.btnLog(0.15) }} />
           <TipChoice title="20%" onPress={() => { this.btnLog(0.20) }} />
