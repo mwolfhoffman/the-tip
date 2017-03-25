@@ -1,8 +1,8 @@
-# just-the-tip
+# The Tip
 
 This is my frist react-native app!
 
-This app allows you to enter the amount of a bill and will calculate your tip. All it does is give you the tip. If the tip is all you want, then this app is for you!
+This app allows you to enter the amount of a bill and will calculate your tip. You can choose a custom pre-set tep (10%,15%,25%) or you can enter your own customized preferred tip percentage. 
 
 For Android only. (I develop on Windows and can't do ios yet) 
 
@@ -10,5 +10,8 @@ For Android only. (I develop on Windows and can't do ios yet)
 
 - React-Native
 - ES6
+- Babel
+- Webpack
+- React-Native CLI
 
 
