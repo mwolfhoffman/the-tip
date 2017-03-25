@@ -88,7 +88,7 @@ export default class JustTheTip extends Component {
         return (
             <View style={styles.backGround}>
                 <Text style={styles.title}>
-                    Just The Tip
+                    The Tip
         </Text>
 
                 <View style={styles.resultWrapper}>
